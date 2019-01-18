@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { SearchPageComponent } from './search-page/search-page.component';
-import { NavigationComponent } from './src/app/shared/navigation/navigation.component';
-import { FooterComponent } from './footer/footer.component';
+import { NavigationComponent } from './shared/navigation/navigation.component';
+import { FooterComponent } from './shared/footer/footer.component';
+
 
 @NgModule({
   declarations: [
