@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { UserService } from './services/user-service/user.service';
 import { RepositoryService } from './services/repo-service/repository.service';
-import { AlertsService } from './services/alert-service/alerts.service'
+import { AlertsService } from './services/alert-service/alerts.service';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,7 +25,8 @@ import { FooterComponent } from './shared/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [UserService, RepositoryService, AlertsService ],
   bootstrap: [AppComponent]
