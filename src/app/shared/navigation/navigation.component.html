@@ -9,6 +9,20 @@
         <div class="collapse navbar-collapse" id="navbar-transparent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-home" aria-hidden="true"></i> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-user-circle" aria-hidden="true"></i> </a>
+                </li>
+            
+                <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-search" aria-hidden="true"></i> </a>
+                    </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
                 </li>
                 <li class="nav-item">
@@ -21,3 +35,13 @@
         </div>
     </div>
 </nav>
+
+
+<a routerLink='/intro' routerLinkActive='active' class="btn">Intro part</a>
+        <a routerLink='/profile' routerLinkActive='active' class="btn">Github Search</a>
+
+        {path:"landing",component:LandingPageComponent},
+        {path:"profile",component:ProfilePageComponent},
+        {path:"search",component:SearchPageComponent},
+        {path:"",redirectTo:"/landing",pathMatch:"full"},
+        {path:"**",component:PageNotFoundComponent}
